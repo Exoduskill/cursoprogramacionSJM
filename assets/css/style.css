@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" sans-serif;
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #333;
+}
+:root{
+    --primer-color: #007bff;
+    --segundo-color: #28a745;
+    --tercer-color: #343a40;
+    --cuarto-color: #f8f9fa;
+    --quinto-color: #6f42c1;
+    --color-caja:rgba(255, 255, 255, 0.85);
+}
+
+/*MENU DE LA CABECERA*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tercer-color);
+    height: 40px;
+    border-bottom: 1px solid var(--primer-color);
+    padding: 10px;
+}
+.logo img{
+    height: 50px;
+    max-width: 150px;
+    width: auto;
+    display: block;
+    margin-left: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin-right: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--primer-color);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3 ease;
+}
+nav a:hover{
+    background-color: var(--quinto-color);
+    color: var(--cuarto-color);
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/*QUIENES SOMOS*/
+.quienes-somos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+}
+
+.img {
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid var(--color-caja);
+    margin: 10px;
+}
+/*.col-1{
+    padding-right: 30px;
+}*/
+.col-2 h2 {
+    font-size: 2em;
+    color: var(--cuarto-color);
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+.col-2 p{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color:var(--cuarto-color);
+}
+
+/*LA COMPAÑIA*/
+.la-empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+    margin-top: 100px;
+}
+
+.img {
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid var(--color-caja);
+    margin: 10px;
+}
+
+.col-2 h2 {
+    font-size: 2em;
+    color: var(--cuarto-color);
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+.col-2 p{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color:var(--cuarto-color);
+}
+
+/*SERVICIOS*/
+
+.servicio-titulo{
+    margin-top: 200px;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color:var(--cuarto-color);
+}
+.p-servicio{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+    color:var(--cuarto-color);
+}
+.servicios{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 5% 5% 5%;
+}
+.servicios .card{
+    border: 3px solid var(--tercer-color);
+    padding: 1px;
+    border-radius: 20px;
+    background-color: var(--color-caja);
+
+}
+.img-servicios{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+.card h3{
+    color:var(--tercer-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.card p{
+    color:var(--tercer-color);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;  
+}
+/*CONTACTO*/
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*background-color: burlywood;*/
+}
+.contacto article{
+    padding: 100px;
+    text-shadow: 2px 2px 4px #000000;  
+}
+.contacto article h2{
+    color: var(--cuarto-color);
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.contacto article p{
+    color: var(--cuarto-color);
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+label{
+    color: var(--cuarto-color);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    font-weight: bold;   
+}
+input[type=text] , [type=email] , textarea{
+    width: 100%;
+    padding: 5px;
+    /*border: 1px solid var(--gray);*/
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none; /*Esto controla la cajetilla de textarea para que pueda o no ser redimensionada*/
+}
+input[type=submit]{
+    background-color: var(--tercer-color);
+    width: 20%;
+    padding-top: 10px 20px;
+    font-size: 20px;
+    color: var(--cuarto-color);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: var(--segundo-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*PLANES*/
+
+.titulo-h2{
+    color: var(--cuarto-color);
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;  
+}
+.planes-re {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 0 40px 50px 40px; /* Margen superior/inferior y lateral */
+    align-items: center; /* Alinea verticalmente el contenido de las columnas al centro */
+    justify-content: center;
+}
+.planes-re img {
+    width: 400px;
+    height: auto;
+    padding-left: 40px;
+    display: block; /* Elimina el espacio extra que los elementos inline pueden generar */
+    margin: 0 auto;
+}
+.planes-re article h2 {
+    font-size: 2.2em;
+    color: var(--cuarto-color);
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 15px;
+}
+
+.planes-re article p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--cuarto-color);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.center{
+    text-align: center;
+}
+
+.planes {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 0px 40px 30px;*/
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;/* Ajusta los márgenes: 40px a la izquierda y derecha. */
+    margin: 0px 40px 30px 40px;
+    padding: 0 10px;
+}
+.planes article{
+    
+    border-radius: 15px;
+    border: 2px solid var(--tercer-color);
+    padding: 30px;
+    background-color: var(--color-caja);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil para mejor diseño */
+
+    /* Para que el contenido interno de cada artículo se estire y se vea bien */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.planes article ul {
+    list-style-type: none; /* Elimina las viñetas por defecto (si no lo habías hecho ya) */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+    margin: 0; /* Elimina el margen por defecto de la lista */
+}
+
+.planes article ul li {
+    display: flex; /* ¡Usa Flexbox para alinear el icono y el texto! */
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) de la línea */
+    gap: 10px; /* Añade espacio entre el icono y el texto */
+    margin-bottom: 10px; /* Espacio entre cada elemento de la lista */
+    font-size: 1em;
+    color: #444;
+}
+
+
+
+/*FOOTER*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas de igual ancho */
+    background-color: var(--tercer-color); /* Gris Carbón para el fondo del footer */
+    padding: 20px; /* Padding general para el footer (arriba, abajo, izquierda, derecha) */
+    align-items: center; /* Centra verticalmente el contenido de cada columna de la cuadrícula */
+    color: var(--cuarto-color); /* Color de texto predeterminado para todo el footer */
+}
+
+/* Estilos comunes para todas las columnas del footer */
+.footer-col-item {
+    display: flex; /* Usamos Flexbox para alinear el contenido dentro de cada columna */
+    flex-direction: column; /* Apila los elementos verticalmente (ej. título y luego iconos) */
+    justify-content: center; /* Centra verticalmente el contenido dentro de la columna */
+    gap: 10px; /* Espacio entre los elementos apilados (como h3 y ul/div) */
+    padding: 0 10px; /* Pequeño padding horizontal para que el contenido no toque los bordes de la celda */
+}
+
+/* ESTILOS ESPECÍFICOS POR COLUMNA */
+/* Columna del Logo (Izquierda) */
+.logo-col {
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+.footer-logo-img { /* Selector para la imagen del logo dentro del footer */
+    height: 75px; /* Altura fija para el logo */
+    max-width: 150px; /* Ancho máximo para el logo */
+    width: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    /* Puedes eliminar los margin-left/margin-top si el padding del footer y align-items:flex-start te dan la posición deseada */
+    /* margin-left: 30px; */
+    /* margin-top: 10px; */
+}
+
+/* Columna de Redes Sociales (Centro) */
+.social-col {
+    align-items: center; /* Centra horizontalmente el contenido (h3 y lista de iconos) */
+    text-align: center; /* Asegura que el texto del h3 esté centrado */
+}
+.social-col h3 {
+    margin-bottom: 5px; /* Pequeño espacio debajo del título "Síguenos" */
+    font-weight: bold;
+    color: var(--cuarto-color); /* Blanco Suave */
+}
+
+.social-icons-list { /* La lista <ul> de iconos de redes sociales */
+    list-style: none; /* Quita las viñetas */
+    display: flex; /* Para que los <li> (iconos) estén en línea */
+    padding: 0;
+    margin: 0; /* Quita el margen por defecto de la lista */
+    gap: 20px; /* Espacio entre cada icono */
+    justify-content: center; /* Centra horizontalmente los iconos dentro de la lista */
+    align-items: center; /* Centra verticalmente los iconos si tuvieran diferentes tamaños */
+}
+
+.social-icons-list li a {
+    color: var(--cuarto-color); /* Blanco Suave para los iconos en estado normal */
+    font-size: 2em; /* ¡Haz los iconos más grandes y visibles! */
+    text-decoration: none; /* Quita el subrayado si lo hay */
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.social-icons-list li a:hover {
+    color: var(--segundo-color); /* Verde Brillante para el hover de los iconos */
+}
+
+/* Columna de Contacto (Teléfono - Derecha) */
+.contact-col {
+    align-items: flex-end; /* Alinea el contenido a la derecha */
+    text-align: right; /* Alinea el texto del h3 a la derecha */
+}
+
+.contact-col h3 {
+    margin-bottom: 5px; /* Espacio debajo del título "Comunícate" */
+    font-weight: bold;
+    color: var(--cuarto-color); /* Blanco Suave */
+}
+
+.phone-contact-info { /* Contenedor del icono y el número de teléfono */
+    display: flex; /* Usa Flexbox para alinear el icono y el texto en línea */
+    align-items: center; /* Centra verticalmente el icono y el texto */
+    gap: 8px; /* Espacio entre el icono y el número */
+    color: var(--cuarto-color); /* Blanco Suave para el icono y el texto del teléfono */
+    /* Si quieres el phone-info a la derecha dentro de su columna: */
+    /* justify-content: flex-end; */ 
+    /* Y si solo quieres el texto del número: */
+    /* font-weight: bold; */
+}
+
+.phone-contact-info i {
+    font-size: 1.2em; /* Tamaño del icono de teléfono */
+}
+
+.phone-contact-info span {
+    font-size: 1em; /* Ajusta el tamaño del texto del número */
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el número se rompa en varias líneas */
+}
+
+/* Estilo para la clase .font-text en el footer (si quieres que tenga un color específico, sobreescribe) */
+/* Por defecto, lo hemos puesto a Blanco Suave en el footer. */
+/* Si necesitas que sea el Azul Vibrante en algún punto, especifícalo así: */
+
+
